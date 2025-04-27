@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Include the D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
     <nav>
@@ -31,13 +33,16 @@
         </div>
     </div>
 
+    <svg width="200" height="200"></svg>
+
     <footer>
         <p>&copy; <span id="year"></span> Luong Nhat Minh Nguyen</p>
     </footer>
 
     <script>
-        // Set the current year in the footer
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    
+    <script src="d3.js"></script>
 </body>
 </html>
