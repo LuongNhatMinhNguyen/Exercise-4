@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img src="images/PowerIcon.png" alt="Power Logo" class="logo" onclick="location.href='index.html'">
+        <a href="index.html" id="home-link" class="active">Home</a>
+        <a href="televisions.html" id="televisions-link">Televisions</a>
+        <a href="about.html" id="about-link">About Us</a>
+    </nav>
+
+    <div class="container">
+        <div id="content">
+            <h1>Welcome to the Energy Website</h1>
+            <p>Learn about appliance energy consumption in the Australian market.</p>
+            <h2>Appliance Energy Consumption</h2>
+            <p>Understanding the energy consumption of various appliances can help you make informed decisions about energy use and efficiency. Here are some common appliances and their average energy consumption in Australia:</p>
+            <ul>
+                <li><strong>Refrigerators:</strong> 100-800 kWh/year</li>
+                <li><strong>Washing Machines:</strong> 200-400 kWh/year</li>
+                <li><strong>Televisions:</strong> 50-400 kWh/year</li>
+                <li><strong>Air Conditioners:</strong> 500-2000 kWh/year</li>
+                <li><strong>Dishwashers:</strong> 200-300 kWh/year</li>
+            </ul>
+            <p>By choosing energy-efficient appliances, you can reduce your energy consumption and save on electricity bills.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Luong Nhat Minh Nguyen</p>
+    </footer>
+
+    <script>
+        // Set the current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
